@@ -26,9 +26,9 @@
           </ion-text>
       </ion-item>
       <ion-item *ngIf="alumnos.length>0">
-          <app-datos-alumno [alumnosList]="alumnos"
+          <app-datos-alumnos [alumnosList]="alumnos"
            (eliminar)="eliminar($event)" (editar)="editar($event)">
-          </app-datos-alumno>
+          </app-datos-alumnos>
       </ion-item>
   </ion-list>
 </ion-content>

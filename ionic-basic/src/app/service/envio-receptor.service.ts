@@ -30,4 +30,5 @@ export class EnvioReceptorService {
   getPersonaje(idPersonaje:string): Observable<any>{
     return this.http.get<any>(`http://swapi.dev/api/people/${idPersonaje}`,{});
   }
+
 }

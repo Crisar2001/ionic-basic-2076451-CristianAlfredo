@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Personaje } from '../interface/personaje';
 import { EnvioReceptorService } from '../service/envio-receptor.service';
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.page.html',
@@ -18,11 +19,10 @@ export class InicioPage implements OnInit {
     {name:'Pedro Perez', uuid:"34523452345234523452345", email:"correo@gmail.com"}
   ];
 
-
   constructor(
     private router: Router,
     private envioReceptor: EnvioReceptorService
-  ) { }
+    ) { }
 
   ngOnInit() {
   }

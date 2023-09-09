@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AlumnoService } from '../service/alumno.service';
+import { AlumnosService } from '../service/alumnos.service';
 import { Alumno } from '../interface/alumno';
+
 @Component({
   selector: 'app-alumnos',
   templateUrl: './alumnos.page.html',
@@ -15,7 +16,7 @@ export class AlumnosPage implements OnInit {
   idActualizar: any;
   error: boolean = false;
 
-  constructor(private alumnoService: AlumnoService) { }
+  constructor(private alumnoService: AlumnosService) { }
 
   ngOnInit() {
     this.alumnoService.setAlumnos([
@@ -41,6 +42,7 @@ export class AlumnosPage implements OnInit {
       nombre: this.nombre,
       matricula: this.matricula
     };
+    
     if (this.estado ==='actualizar'){
       alumno.id = this.idActualizar;
       this.alumnos = this.alumnoService.actualiza(alumno);
