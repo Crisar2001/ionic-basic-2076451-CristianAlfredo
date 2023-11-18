@@ -11,7 +11,8 @@ export const environment = {
     storageBucket: "aplicaciones-moviles-e9de7.appspot.com",
     messagingSenderId: "758995719678",
     appId: "1:758995719678:web:2936b129260680765cdcaf",
-    }
+    },
+  apiKeyMaps: 'AAIzaSyAq3pX3o1_3VcKiBLdWZCY6YskA4t55I8I'
 };
 
 /*
